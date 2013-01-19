@@ -1,0 +1,78 @@
+Click the Account Administration icon to manage your accounts, web properties, profiles, and user access. (You can find the icon at the top right of any screen in Google Analytics.)
+You¡¯ll be taken to the Account Administration screen which lists all of the Analytics accounts to which you have access.  
+The ¡±Plus New Account¡± button is how you would create a new analytics account under the login that you are currently using.
+
+So, when should you create a new account? If you manage the analytics services for several websites which belong to different organizations, you¡¯ll generally want to create a new account for each organization. We¡¯ll discuss this best practice in a few minutes.
+
+You are permitted to create up to  25 analytics accounts per Google username. However, you can be added as an administrator to an unlimited number of accounts.
+
+To administer an account, just click on it in the table.
+
+To give other users access to a Google Analytics account, click on the account name in the Account Administration screen.
+You¡¯ll be taken to a screen similar to the one shown in the slide.
+Click the User tab.
+
+All of the users who currently have access to the account will be listed in the table.
+There is a settings link for each user in the table. Click this link to edit the user¡¯s name, email address, or to change their Role ¨C either administrator or user.
+There are two Roles. ¡°Administrators¡± have access to all reports and they can also modify settings. 
+So, Administrators can create profiles, filters, and goals, and they can add users.
+
+Users only have read access to your reports and they can¡¯t modify analytics settings.  Also, ¡°Users¡± can be restricted to viewing only specific profiles.  
+To add a user, click the Plus New User button.  
+
+A screen that looks like this will appear.  Enter the user information in the form. 
+In order for you to add a new user, they must have a Google Account. 
+If they don¡¯t have a Google Account, ask them to create one at google.com/accounts.
+Select a Role for the new user. 
+You can either grant read-only access to certain reports or you can make them an administrator. Remember that administrators can view all reports and modify account settings.
+If you select User as the role, the interface will show you a list of all profiles associated with your account. 
+Select the profiles you would like this user to have access to and click the ¡°Add¡± button to apply your changes.
+
+
+To modify access for an existing user, find the user on the Users tab and click settings.
+You can change the user¡¯s role or change the profiles he or she can access.
+Select the profiles you would like to remove report access to and click the ¡°Remove¡± button.
+Remember that an administrator has full administrative access to all profiles within the account. 
+
+If you manage the analytics services for several websites which belong to different organizations, the best practice is to create a separate Analytics account for each organization.
+Otherwise, if you were to group all the websites of all the different organizations into a single account, any Administrators you created on the account would have access to all the reports for all the websites.
+Not only would the administrators be able to see the reports of other organizations, they¡¯d also be able to change analytics settings on profiles that don¡¯t belong to them.
+This raises the potential for an Administrator to accidentally edit -- or even delete -- another organization¡¯s settings and data.
+If you want to change your e-mail login, create a new Google account.  Add your new login as an administrator to your Google Analytics account.
+Profiles
+A profile is a set of rules that defines the data you see for a web property. For example, you might have web property example.com for which you have three profiles.
+One of the profiles might show all the data for all the traffic that comes to example.com.
+Another profile might use filters to only show the data for traffic to a certain subdirectory.
+Still another profile might use a different set of filters to show only another subset of data.
+
+
+To see a list of the profiles that belong to a specific web property, navigate to that web property from the Account Administration screen.
+Once you are on the screen for the web property, click the Profiles tab. On the Profiles tab, you¡¯ll see a Profile selector menu that lists all the profiles. 
+
+Profiles are very flexible -- they are basically just a set of rules that define what data is to be included in the reports.
+Here is a schematic showing an Analytics account with one web property and two profiles. 
+Both profiles contain traffic data for the example.com web property. 
+One profile might contain all the traffic data. 
+The other profile might be filtered so that it contains only traffic from AdWords visitors.
+In addition, you might want to give certain users access only to the filtered profile. This has the effect of only allowing these users to see AdWords traffic to example.com.
+
+
+
+Here is the Profiles tab for the ¡°example.com test 1¡± profile. 
+
+If you are an administrator on the account, you¡¯ll see the sub-tabs that list the Assets, Goals, Users, Filters, and Profile Settings that are associated with the profile. 
+You¡¯ll also see the ¡°Plus New Profile¡± button ¨C which you can use to create a new profile.
+
+But, if you are not an administrator, you¡¯ll only see the Assets tab. 
+That¡¯s because you need to be an admnistrator to add new profiles or to edit a profile¡¯s goals, users, filters, and settings.
+
+However, you don¡¯t need to be an administrator to add or edit assets.
+This includes advanced segments, annotations, and custom alerts.
+
+Each profile has its own goals, which you set on the goals sub-tab.
+You control who has access to the profile via the Users sub-tab.
+And, you can use the Filters sub-tab to control what data is included in the profile.
+The Profile Settings sub-tab is where you enable e-commerce and site search reports, set your preferred time zone, and other settings.
+To remove a profile, you can simply click Delete this profile on the Profile Settings sub-tab. You¡¯ll need to be an Administrator to do this.
+ Be careful that you are deleting the correct profile, because you won¡¯t be able to recover the historical data for the profile once it¡¯s been deleted.
+

@@ -1,0 +1,44 @@
+In Google Analytics, a pageview is counted every time a page on your website loads. 
+
+So, for example, if someone comes to your site and views page A, then page B, then Page A again, and then leaves your site -- the total pageviews for the visit is 3.
+A visit -- or session --  is a period of interaction between a web browser and a website. Closing the browser or staying inactive for more than 30 minutes ends the visit.
+
+For example, let¡¯s say that a visitor is browsing the Google Store, a site that uses Google Analytics. He gets to the second page, and then gets a phone call. He talks on the phone for 31 minutes, during which he does not click anywhere else on the site.
+
+After his call, he continues where he left off. Google Analytics will count this as a second visit, or a new session.
+
+Note that throughout these modules, the words ¡°visit¡± and ¡°session¡± may be used interchangeably. 
+A visitor is uniquely identified by a Google Analytics visitor cookie which assigns a random visitor ID to the user, and combines it with the timestamp of the visitor¡¯s first visit. 
+
+The combination of the random visitor ID and the timestamp establish a Unique ID for that visitor.
+
+You¡¯ll learn more about the visitor cookie in a subsequent module.
+
+Generally, the Visitors metric will be smaller than the Visits metric which in turn will be smaller than the Pageviews metric.
+
+For example, 1 visitor could visit a site 2 times and generate a total of 5 pageviews.
+A pageview is defined as a view of a page that is tracked by the Google Analytics Tracking Code. 
+
+If a visitor hits reload after reaching the page, this will be counted as an additional pageview. 
+
+If a user navigates to a different page and then returns to the original page, an additional pageview will also be recorded.
+
+A unique pageview represents the number of visits during which that page was viewed--whether one or more times. In other words, if a visitor views page A three times during one visit, Google Analytics will count this as three pageviews and one unique pageview.
+
+¡°Total Visitors¡± counts each visitor during your selected date range only once. So, if visitor A comes to your site 5 times during the selected date range and visitor B comes to your site just once, you will have 2 Visitors. Remember, a visitor is uniquely identified by a Google Analytics visitor cookie.
+
+The ¡°New vs. Returning¡± report classifies each visit as coming from either a new visitor or a returning visitor. So when someone visits your site for the first time, the visit is categorized as ¡°Visit from a new visitor.¡± If the person has browsed your website before, the visit is categorized as ¡°Visit from a returning visitor.¡±
+
+A high number of new visits suggests that you are successful at driving traffic to your site while a high number of return visits suggests that the site content is engaging enough for visitors to come back. 
+
+You can look at the Frequency and Recency report to see how recently visitors have visited. And you can look at the same report to see how frequently they return. The report is under Behavior in the Visitors section.
+
+The Visitors metric -- in other words the number of visitors who came to your site -- is found in the Visitors section.
+
+The Visits metric is found in the Visitors section and the Traffic Sources section. 
+
+The Pageviews metric can be found in the Visitors Overview and in the Content section reports. Most of the other reports show Pages Viewed per Visit instead of Pageviews.
+
+Unique Pageviews is only found in the Content section.
+
+

@@ -1,0 +1,121 @@
+Defining site goals and tracking goal conversions is one of the best ways to assess how well your site meets its business objectives. You should always try to define at least one goal for a website.
+
+So what is a goal? In Google Analytics, a goal represents an activity or a level of interaction with your website that¡¯s important to the success of your business.
+
+Some examples of goals are an account signup,? a request for a sales call, or even that the visitor spent a certain amount of time on the website.  
+There are four types of goals in Google Analytics.
+
+A URL Destination goal is a page that visitors see once they have completed an activity. For an account sign-up, this might be the ¡°Thank You for signing up¡± page. For a purchase, this might be the receipt page. A URL Destination goal triggers a conversion when a visitor views the page you've specified.
+
+A Time on Site goal is a time threshold that you define. When a visitor spends more or less time on your site than the threshold you specify, a conversion is triggered.
+
+A Pages per Visit goal allows you to define a pages viewed threshold. When a visitor views more pages --or fewer pages --than the threshold you've set, a conversion is triggered.
+
+An Event goal allows you to attach a conversion to an event that you have defined. We¡¯ll learn about events in a subsequent lesson.
+You can see total conversions and conversion rates for each of your goals in your reports.  
+There are four types of goals in Google Analytics.
+
+A URL Destination goal is a page that visitors see once they have completed an activity. For an account sign-up, this might be the ¡°Thank You for signing up¡± page. For a purchase, this might be the receipt page. A URL Destination goal triggers a conversion when a visitor views the page you've specified.
+
+A Time on Site goal is a time threshold that you define. When a visitor spends more or less time on your site than the threshold you specify, a conversion is triggered.
+
+A Pages per Visit goal allows you to define a pages viewed threshold. When a visitor views more pages --or fewer pages --than the threshold you've set, a conversion is triggered.
+
+An Event goal allows you to attach a conversion to an event that you have defined. We¡¯ll learn about events in a subsequent lesson.
+You can see total conversions and conversion rates for each of your goals in your reports.  
+For each URL Destination goal that you define, you can also define a funnel. A funnel is the set of steps, or pages, that you expect visitors to visit on their way to complete the conversion. 
+
+A sales checkout process is a good example of a funnel. And the page where the visitor enters credit card information is an example of one of the funnel steps.
+
+So, the goal page signals the end of the activity -- such as a ¡°thank you¡± or ¡°confirmation¡± page -- and the funnel steps are the pages that visitors encounter on their way to the goal.
+Defining a funnel is valuable because it allows you to see where visitors enter and exit the conversion process. 
+
+For example, if you notice that many of your visitors never go further than the ¡°Enter shipping information¡± page, you might focus on redesigning that page so that it¡¯s simpler.
+
+Knowing which steps in the process lose would-be customers allows you to eliminate bottlenecks and create a more efficient conversion path.
+To set up a goal, first go the Account Administration page.  Click the account and web property for which you want to configure a goal.
+Select the profile to which you want to add the goal. 
+Then, click the goals tab and click the plus-Goal link in one of the Goal sets.
+
+You can create up to 4 sets of 5 goals each.
+ 
+To define a URL Destination Goal, select URL Destination as the goal type. Next, enter the URL of the goal page. You don¡¯t have to enter the entire URL. You can simply enter the request URI - that¡¯s what comes after the domain or hostname.
+
+So, if the complete URL is www.googlestore.com/confirmation.php, you only need to enter /confirmation.php.
+
+Make sure that the URL you enter corresponds to a page that the visitor will only see once they complete the conversion activity. So, pick something like the Thank You page or a confirmation page for your goal.
+
+You can also enter a name for the Goal -- here we¡¯ve entered ¡°Completed Order¡±. This name will appear in your conversion reports. 
+
+Defining a funnel is optional. To define your funnel steps, you add the URLs of the pages leading up to the goal URL. Just as with goals, you don¡¯t have to enter the entire URL of a funnel step -- just the request URI is fine.
+
+Provide a name for each step in the funnel -- here we¡¯ve entered ¡°Select gift card ¡° for Step 1.  The names you enter will appear in your reports.
+
+Next, we¡¯ll talk about the Match Type setting.
+The match type defines how Google Analytics identifies a goal or funnel step. You have three choices for the Match Type option.
+
+¡°Head Match¡± is the default. It indicates that the URL of the page visited must match what you enter for the Goal URL, but if there is any additional data at the end of their URL then the goal will still be counted. For example, some websites append a product ID or a visitor ID or some other parameter to the end of the URL. Head Match will ignore these.
+
+Here¡¯s another example, illustrated on this slide: If you want every page in a subdirectory to be counted as a goal, then you could enter the subdirectory as the goal and select Head Match.
+
+¡°Exact Match¡± means that the URL of the page visited must exactly match what you enter for the Goal URL. In contrast to Head Match, which can be used to match every page in a subdirectory, Exact Match can only be used to match one single page. Also notice that Exact Match does not match the second pageview, ¡°/offer1/signup.html?query=hats¡± because of the extra query parameter at the end. 
+
+¡°Regular Expression Match¡± gives you the most flexibility. For example, if you want to count any sign-up page as a goal, and sign-up pages can occur in various subdirectories, you can create a regular expression that will match any sign-up page in any subdirectory. Regular Expressions will be covered in a later module.
+
+When you use Regular Expression Match, the value you enter as the goal URL as well as each of the funnel steps will be read as a Regular Expression.
+
+Remember that regardless of which option you choose, Google Analytics is only matching Request URIs. In other words, the domain name is ignored.
+
+Check ¡°Case Sensitive¡± if you want the URLs you entered into your goal and funnel to exactly match the capitalization of visited URLs.
+The match type defines how Google Analytics identifies a goal or funnel step. You have three choices for the Match Type option.
+
+¡°Head Match¡± is the default. It indicates that the URL of the page visited must match what you enter for the Goal URL, but if there is any additional data at the end of their URL then the goal will still be counted. For example, some websites append a product ID or a visitor ID or some other parameter to the end of the URL. Head Match will ignore these.
+
+Here¡¯s another example, illustrated on this slide: If you want every page in a subdirectory to be counted as a goal, then you could enter the subdirectory as the goal and select Head Match.
+
+¡°Exact Match¡± means that the URL of the page visited must exactly match what you enter for the Goal URL. In contrast to Head Match, which can be used to match every page in a subdirectory, Exact Match can only be used to match one single page. Also notice that Exact Match does not match the second pageview, ¡°/offer1/signup.html?query=hats¡± because of the extra query parameter at the end. 
+
+¡°Regular Expression Match¡± gives you the most flexibility. For example, if you want to count any sign-up page as a goal, and sign-up pages can occur in various subdirectories, you can create a regular expression that will match any sign-up page in any subdirectory. Regular Expressions will be covered in a later module.
+
+When you use Regular Expression Match, the value you enter as the goal URL as well as each of the funnel steps will be read as a Regular Expression.
+
+Remember that regardless of which option you choose, Google Analytics is only matching Request URIs. In other words, the domain name is ignored.
+
+Check ¡°Case Sensitive¡± if you want the URLs you entered into your goal and funnel to exactly match the capitalization of visited URLs.
+To define a Time on Site goal, select Time on Site as the goal type. Next, select "Greater than" or "Less than" and enter an amount of time, for example 15 minutes. We'll discuss goal value shortly.
+
+To define a Pages per Visit goal, select Pages per Visit as the goal type. Next, select "Greater than", "Equal to", or "Less than" and enter a number of pages.
+
+Threshold goals are useful for measuring site engagement, whereas URL Destination goals are best for measuring how frequently a specific activity has been completed. If your objective is for visitors to view as much content as possible, you might set a Pages per Visit goal. Or, if you have a customer support site and your objective is for visitors to get the information they need in as short a time as possible, you might set a Time on Site goal with a "Less than" condition. 
+The ¡°Goal Value¡± field allows you to specify a monetary value for goal. You should only do this for non-ecommerce goals.
+ 
+By setting a goal value, you make it possible for Google Analytics to calculate metrics like average per-visit-value and ROI. These metrics will help you measure the monetary value of a non-ecommerce site. 
+
+Just think about how much each goal conversion is worth to your business. So, for example, if your sales team can close sales on 10% of the people who request to be contacted via your site, and your average transaction is $500, you might assign $50 or 10% of $500 to your "Contact Me" goal. 
+
+Again, to avoid inflating revenue results, you should only provide values for non-ecommerce goals.
+There is an important difference between goal conversions and e-commerce transactions. 
+
+A goal conversion can only happen once during a visit, but an e-commerce transaction can occur multiple times during a visit.
+
+Let¡¯s say that you set one of your goals to be a PDF download and you define it such that any PDF download is a valid goal conversion. And let¡¯s say that the goal is worth $5.
+
+In this case, if a visitor comes to your site and downloads 5 PDF files during a single session, you¡¯ll only get one conversion worth $5. However, if you were to track each of these downloads as a $5 e-commerce transaction, you would see 5 transactions and $25 in e-commerce revenue.
+
+You¡¯ll learn how to set up ecommerce tracking and how to track PDF downloads in later modules.
+
+If you are using a filter that manipulates the Request URI, make sure that your URL Destination goal is defined so that it reflects the changed Request URI field.  For example, in the slide, we have a profile that defines /thankyou.html as a URL Destination goal. But we have another profile with a filter that appends the hostname to the Request URI.  So, for this profile, we need to change the goal definition accordingly. 
+If you define a funnel for a goal, Google Analytics populates the Funnel Visualization report, shown here in the slide.
+
+On the left, you can see how visitors enter your funnel. On the right, you can see where they leave the funnel and where they go.
+
+The middle shows you how visitors progress through the funnel -- how many of them continue on to each step. 
+
+In this example, we can see that there were 9,283 entrances at the top of the funnel and 187 completed orders, at the bottom of the funnel.
+
+This report is very useful for identifying the pages from which visitors abandon your conversion funnel.
+Here¡¯s another report in the Goals section. It¡¯s the Reverse Goal Path report. You can see this data even if you haven¡¯t defined a funnel. It lists the navigation paths that visitors took to arrive at a goal page and shows you the number of conversions that resulted from each path.
+
+In this example, we can see that 97 of the conversions resulted from the first navigation path that¡¯s shown.
+
+This is a great report for identifying funnels that you hadn¡¯t considered before and it can give you great ideas for designing a more effective site.

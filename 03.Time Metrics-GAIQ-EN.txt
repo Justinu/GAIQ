@@ -1,0 +1,39 @@
+To calculate Time on Page, Google Analytics compares the timestamps of the visited pages.
+
+For example, in the slide, the visitor saw page A, then page B, and then left the site.
+
+The Time on Page for page A is calculated by subtracting the page A timestamp from the page B timestamp. 
+
+So, the Time on Page for page A is 1 minute and 15 seconds.
+
+In order for this calculation to take place, the Google Analytics Tracking Code must be executed on both pages.
+
+The Time on Page for page B is 0 seconds, because there is no subsequent timestamp that Google Analytics can use to calculate the actual Time on Page.
+
+Now, suppose the visitor continued on to a third page before exiting. 
+
+The second page now has a Time on Page of 1 minute 10 seconds.
+
+The Time on Site is now calculated as 2 minutes and 25 seconds.
+For Average Time on Page, bounces are excluded from the calculation. In other words, any Time on Page of 0 is excluded from the calculation.
+
+For Average Time on Site, bounces remain a part of the calculation. 
+
+To calculate Average Time on Site, Google Analytics divides the total time for all visits by the number of visits.
+ 
+Some sites make extensive use of Flash or other interactive technologies. 
+
+Often, these kinds of sites don¡¯t load new pages frequently and all the user interaction takes place on a single page.
+
+As a result, it¡¯s common for sites like this to have high bounce rates and low average times on site.
+
+If you have such a site, you may wish to set up your tracking so that virtual pageviews or events are generated as the user performs various activities.
+
+You can learn how to do this in the module on Event Tracking and Virtual Pageviews. 
+Visit Duration categorizes visits according to the amount of time spent on the site during the visit. 
+
+The graph allows you to visualize the entire distribution of visits instead of simply the ¡®Average Time on Site¡¯ across all visits. 
+
+You can see whether a few visits are skewing your ¡®Average Time on Site¡¯ upward or downward.
+
+Visit Duration can be found in the Engagement report under Behavior in the Visitors section.

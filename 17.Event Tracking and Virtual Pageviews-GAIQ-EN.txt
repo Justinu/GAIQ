@@ -1,0 +1,104 @@
+Many websites use technologies such as Flash and Ajax to interact with visitors. 
+
+For example, some websites embed video players, games, and other interactive experiences on site pages. However, the basic web analytics model of tracking pageviews doesn¡¯t capture these kinds of interactions. This is because when a visitor interacts with a video player, for example, no pageview is generated. 
+
+Some other examples of interactions that don¡¯t generate pageviews are Ajax-based activities, file downloads, and clicks on links that take the visitor to another site.
+
+So how do you track these kinds of activities? There are two ways: virtual pageviews and Event Tracking.
+You can create a virtual pageview to represent practically any kind of activity or interaction you want. 
+
+You simply call _trackPageview() and provide any name you want as the argument. 
+
+It¡¯s ¡°virtual¡± because  you¡¯re telling Google Analytics to register a pageview even though no new page has actually been loaded.
+
+You¡¯ll see these virtual pageviews alongside ordinary pageviews in the Pages and Content Drilldown reports.
+If you look at the Google Analytics Tracking Code, you¡¯ll notice that it calls _trackPageview(). 
+
+This lets Google Analytics know that the browser has loaded a page.
+
+When you call _trackPageview(), however, you¡¯ll want to provide an argument that specifies a virtual pagename for the event you¡¯re tracking.
+
+Here are some more examples.
+
+In the first example, we¡¯re tracking a download.
+
+In the second example, we¡¯re tracking a Flash event.
+
+In each of these cases, we¡¯re simply calling _trackPageview() to register a virtual pageview.
+It¡¯s a good idea to adopt a clear naming convention for your virtual pageviews. You might, for example, group virtual pageviews into categories by giving them a virtual subdirectory.
+
+Also, since virtual pageviews appear along with standard pageviews in reports, you may wish to create a duplicate profile where you filter out the virtual pageviews.
+
+To make this easy, you might organize all of your virtual pageviews into a ¡°virtual¡± directory.
+The other way to track non-pageview interactions is to use Event Tracking. 
+
+One advantage of using Event Tracking is that you won¡¯t generate an extra pageview each time an interaction occurs.
+
+Another advantage is that you can easily organize your events into categories, actions, and labels.  And you can even provide values for each event you track. 
+
+All of your events show up in the Events reports within the Content section.
+Just call the _trackEvent() method each time you want to register an event. The slide shows the full specification of _trackEvent() -- which you can also find documented on the Google Code site -- and how you would actually call it, assuming that you are using Asynchronous Tracking.
+
+We¡¯ll discuss the arguments to _trackEvent() in a minute.
+Here¡¯s an example of how you¡¯d call _trackEvent() from a Flash video player. 
+
+In this example, _trackEvent will get called each time the visitor releases the Play button on the video player.
+
+_trackEvent will register an event with a category name of ¡°Videos¡±, an Action name of ¡°Play¡±, and a Label of ¡°Movie Drama¡±.
+
+Let¡¯s look at each of these arguments.
+Let¡¯s look at each of the arguments to _trackEvent. 
+
+The strings that you provide for the first 3 arguments, Category, Action, and Label, govern how the events will be organized in your reports.
+
+So, you¡¯ll want to think carefully about how you want to structure your events.
+Category is a name that you supply as a means to group objects -- which are usually user interface elements that you want to track.
+
+So, for example, if you have games and videos on your site, you¡¯d probably want to have a ¡°Games¡± category and ¡°Videos¡± category.
+
+Click ¡°Event Category¡± in the Top Events report to see all the user interface elements with which your visitors interacted.   
+Action is the name you want to give to the type of interaction you¡¯re tracking. 
+
+So, for example, for Videos, you¡¯d probably want to track how many times your visitors pressed Play.
+
+Click ¡°Actions¡± in the  Top Events report to see the interactions that occurred.
+The Label argument is optional. A Label allows you to provide additional information for for the event you are tracking. 
+
+For example, if you are tracking video plays, you might use the Label argument to specify the name of the movie that was played.
+
+Or, for file downloads, you might use it for the name of the file being downloaded.
+
+Click ¡°Labels¡± in the Top Events report to see the the Labels of of the events that occurred.
+Value is the fourth, and optional, argument to _trackEvent().  
+
+Unlike the other arguments which are all strings, Value is an integer. You can use it to assign a numeric value to a tracked page object. 
+
+You¡¯ll then be able to see a sum total of these values in the Event Value column of your Events reports.
+
+You¡¯ll also be able to see an average of these values in the Avg. Value column of your Events reports.
+
+So, you might, for example, specify a dollar value when a specific playback marker is reached on your video player. To call _trackEvent() without a value, simply omit the argument. 
+In your reports, you¡¯ll notice that both Total Events and Unique Events are counted. 
+
+Total Events is simply the total number of times an event occurs -- really it¡¯s just the number of times _trackEvent was called. 
+
+But, for Unique Events, each particular event is only counted once per visit.
+
+So, if during a single visit, a visitor presses Play 5 times on the same movie, Total Events will be incremented by 5.
+
+But Unique Events will only be incremented by 1, because for Unique Events, a particular event is only counted once per visit.
+As we mentioned earlier, the arguments you provide when you call _trackEvent will govern how events are organized in your reports.
+
+So, before you add the calls to _trackEvent to your site, consider these best practices.
+
+First, determine in advance all of the kinds of events you¡¯ll want to track. 
+
+Try to create a hierarchy of Categories, Actions, and Labels that will grow with your needs. Work with your report users to make sure that the hierarchy makes sense.
+
+And use a clear and consistent naming convention for your Categories, Actions, and Labels.
+
+Using trackEvent() allows you to analyze event based interactions in much greater detail than is possible using virtual pageviews.
+
+For example, instead of just seeing how many times a movie was played on your site, you can analyze how people use your video player, and see how different events correlate with site usage and ecommerce metrics.
+
+Also, by tracking events separately from pageviews, you won¡¯t inflate your pageview count.

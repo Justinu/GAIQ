@@ -1,0 +1,114 @@
+Google Analytics allows you to track and analyze all of your marketing campaigns -- including paid search campaigns, banner ads, emails and other programs. 
+There are two ways to track ad campaigns.
+ 
+For AdWords campaigns, you should enable keyword autotagging.  This allows Google Analytics to automatically populate your reports with detailed AdWords campaign information.
+In order to enable autotagging, you¡¯ll need to link your AdWords and Google Analytics accounts; we¡¯ll look at this in more detail in the next slide.
+
+The second way to track campaigns is to manually tag links. So, for example, you could tag the links in an email message with campaign-identifying information. You may also choose to manually tag AdWords links if you do not wish to enable autotagging.
+
+The tags are campaign variables that you append to the end of your URLs.
+By linking Google Analytics to your AdWords account, you can get advanced reporting that measures performance and ROI for your AdWords campaigns.  
+
+Within AdWords, select Google Analytics under the Reporting tab to link your accounts.  The AdWords login that you¡¯re using will need administrator privileges in Analytics in order to link the accounts. 
+
+If you don¡¯t already have an Analytics account, you¡¯ll be able to create one. 
+
+
+When you link your accounts, you should enable "Destination URL Autotagging¡±. This option allows you to differentiate your paid ads from organic search listings and referrals and allows you to see detailed campaign information in the AdWords section of your Traffic Sources reports. 
+ Your cost data -- the information about clicks and keyword spending -- will be applied once you link your accounts. If you don't want cost data imported into a particular profile, you can edit the profile settings and de-select the cost data option -- after you've completed the linking process.
+Autotagging your links is important because it helps Analytics differentiate the traffic coming from Google paid listings, outlined in green on the slide,  and traffic coming from Google organic listings, which are outlined in red.
+
+If autotagging is not enabled, your Analytics reports will show that the clicks from the sponsored listings and the organic listings are both coming from the same source: google organic. 
+By default, Analytics considers them both to be from Google organic search results.
+So, enabling autotagging allows you to see which referrals to your site came from your paid Google campaigns and which ones came from Google organic search results.
+Autotagging works by adding a unique id, or g-c-l-i-d, to the end of your destination URLs. 
+This unique id allows Analytics to track and display click details in your reports.
+
+It is important to note that 3rd party redirects and encoded URLs can prevent autotagging from working properly. 
+You should test these cases by adding a unique parameter to the end of your URL --- for example you could add ?test=test. 
+Test to make sure that the parameter is carried through to your destination page and that the link doesn¡¯t break.
+
+Notice that the first query parameter is always preceded with a question mark. Subsequent values are separated using ampersands. 
+Here¡¯s an example of a gclid appended to the end of a URL.
+To enable autotagging, select ¡°Account Preferences¡± under ¡°My Account¡±. 
+
+Make sure that the Tracking option reads ¡°yes¡±. If it says ¡°no¡±, click the edit link, check the box for ¡°Destination URL Autotagging¡±, and click ¡°Save Changes¡±.
+
+When linking your AdWords account to Analytics for the first time, you¡¯ll be prompted to automatically select ¡°Destination URL Autotagging¡± and ¡°Cost Data Import¡±.  
+
+If you want to change your autotagging settings later, you can do so by editing your AdWords account preferences.
+All AdWords cost data from an account will be imported into any profile in which the Apply Cost Data checkbox is selected.
+Make sure both your AdWords and Analytics accounts are set to the same currency so that ROI data is accurately calculated.
+
+Recall that when linking your AdWords account to your Analytics account, your cost data will be applied to all of your profiles.
+If you don't want cost data imported into a particular profile, you can edit the profile settings. Within the "Edit Profile Information" screen, find the "Apply Cost Data" checkbox. De-select this checkbox.
+
+And finally, note that Google Analytics is only able to import cost data from AdWords, and not from other ad networks.
+You may notice differences between the data in your Google Analytics and AdWords reports. There are several reasons for these differences. 
+First, AdWords tracks clicks, while Analytics tracks visits. Second, some visitors who click on your AdWords ads may have JavaScript, cookies, or images turned off.
+As a result,  Analytics won't report these visits, but AdWords will report the click.
+
+You¡¯ll also see differences between Analytics and AdWords if the Google Analytics Tracking Code on your landing page doesn¡¯t execute. 
+In this case, AdWords will report the click but Analytics will not record the visit. 
+
+Invalid clicks may also cause reporting differences because while Google AdWords automatically filters invalid clicks from your reports, Google Analytics will still report the visits.
+Finally, keep in mind that AdWords data is uploaded once a day to Analytics so the results for each may be temporarily out of sync.
+Make sure that your landing pages contain the Google Analytics Tracking Code. If they don¡¯t, campaign information will not be passed to Analytics, but clicks will register in AdWords.
+
+Make sure that you have autotagging enabled. Otherwise, visits will be marked as Google Organic instead of Google CPC. While we strongly recommend that you use autotagging instead of manual tagging, if you do manually tag your destination URLs, you must make sure that all of them are tagged, otherwise data discrepancies will occur. 
+
+Be aware that campaign data can be lost if your site uses redirects. As a result, Analytics won¡¯t show the visits as coming from AdWords, but your AdWords report will still report the clicks.
+
+Google Analytics automatically tracks all of the referrals and search queries that send traffic to your website. 
+
+However, if you are running paid advertising campaigns, you should add tags to the destination URLs of your ads.  
+Adding a tag allows you to attach information about the campaign that will show up in your Analytics reports.
+
+
+
+Although it¡¯s possible to manually tag your AdWords ads, you should enable auto-tagging instead.
+ 
+If you manually tag your AdWords ads, the AdWords reports will only show you information by Campaign and Keyword.
+If you enable auto-tagging, you¡¯ll be able to see much more detail. The AdWords reports will show you results by ad group, matched search query, placement domain and many other AdWords attributes.     
+
+
+
+There are five variables you can use when tagging URLs. To tag a URL, you add a question mark to the end of the URL, followed by your tag, as shown in the slide.
+The variables and values are listed as pairs separated by an equals sign. Each variable-value pair is separated by an ampersand.
+Let¡¯s look at each variable.
+You should use utm_source to identify the specific website or publication that is sending the traffic.
+Use utm_medium to identify the kind of advertising medium -- for example, cpc for cost per click, or email for an email newsletter. 
+Use utm_campaign to identify the name of the campaign -- for example, this could be the product name or it might be a slogan.
+You should always use these three variables when tagging a link. You can use them in any order you want.
+
+If you're tagging paid CPC campaigns, you should also use utm_term to specify the keyword. 
+And, you can differentiate versions of a link -- for example, if you have two call-to-action links within the same email message, you can use utm_content to differentiate them so that you can tell which version is most effective. 
+To illustrate, let¡¯s look at a two versions of a link to mysite.com, both placed on yoursite.com.  
+The first link in the slide does not have a tag. Traffic from this link will show up in your reports as a referral from yoursite.com. There won¡¯t be any campaign information.
+The second link has a tag. Traffic from this link will show up with a source of yoursite, and it will show as a banner, instead of a referral.
+Also, you¡¯ll see this traffic reflected under summerpromo in your Campaigns report.
+Let¡¯s look at a destination URL from an AdWords ad. 
+In the first example, no tag has been provided and autotagging is disabled. In this case, you won¡¯t see this traffic in your AdWords reports.
+The second example shows how to manually tag an AdWords link. This traffic will show up in your AdWords reports, but information will be limited to campaign and keyword. 
+You must specify cpc as your medium and google as your source in order to see this traffic in your AdWords reports. You should also specify cpc as your medium when tagging paid search campaigns from other search engines.
+The third example shows what an AdWords autotagged URL might look like once AdWords has appended the g-c-l-i-d variable to the end of the URL.  
+This traffic will show up in your AdWords reports and you¡¯ll see complete AdWords information. 
+You can select any of these variables as a dimension in most reports. 
+For example, to see all of the sources in California from which you received traffic, you could go to the Map Overlay report, drill down to California, and select Source as a dimension.
+You can use the URL Builder in the Google Analytics Help Center to construct your URLs. 
+You enter in the destination URL and the values for each campaign variable. You should always use source, medium and campaign name.
+The URL Builder can be found via the link displayed here on the slide, or you can search for ¡°URL Builder¡± in the Analytics Help Center.
+
+The URL builder can only construct one URL at a time,  so you probably won¡¯t want to use it to construct every URL for every campaign.
+If you have a large number of URLs to tag, you can use spreadsheets to automate the process.  
+Generate a sample URL in the URL Builder and create a simple spreadsheet formula.  
+Spreadsheets can make it much easier to generate thousands of tagged URLs.
+Stick to these best practices when tagging your advertising campaigns.
+
+If you use AdWords, be sure to enable auto-tagging. Otherwise, you¡¯ll miss out on important information that can help you optimize your AdWords campaigns. 
+
+Second, for each campaign, use the URL Builder to create a template URL.  Then, copy and paste from the template to create the rest of the URLs for the campaign.
+
+Third, use consistent names and spellings for all your campaign values so that they are recorded consistently within your Analytics reports
+
+Finally, use only the campaign variables you need. You should always use source, medium, and campaign name, but term and content are optional. 

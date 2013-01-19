@@ -1,0 +1,72 @@
+If your site sells products or services online, you can use Google Analytics e-commerce reporting to track sales activity and performance.  
+
+The Ecommerce reports show you your site¡¯s transactions, revenue, and many other commerce-related metrics. 
+
+Some examples of the kind of information you can get from the e-commerce reports include:
+? the products that were purchased from your online store
+? a list of transactions, and
+? the number of times people visited your site before purchasing
+
+
+
+E-commerce metrics are also available on the Ecommerce tab which appears in many reports. 
+
+For example, on the Ecommerce tab of the AdWords Campaigns report, you can see how much revenue is associated with your AdWords campaigns.
+
+In order to use e-commerce reporting, you¡¯ll need to do three things. 
+
+First, enable e-commerce reporting within your Analytics website profile.
+
+Second, add or make sure that you¡¯ve added the Google Analytics Tracking Code to your receipt page or ¡°Transaction Complete¡± page.
+
+Finally, you¡¯ll need to add some additional e-commerce tracking code to your receipt page so that you can capture the details of each transaction.
+
+Let¡¯s take a look at each step.
+Step 1 is simply to enable the E-commerce selection for the profile.  
+ 
+Click the Account Administration icon. Navigate to the desired account and web property. 
+Select the desired profile and click the Profile Settings tab.
+
+You¡¯ll then see the screen shown here. 
+
+Select ¡°Yes¡± next to E-commerce Website and save your changes.
+For Step 2, add the Google Analytics Tracking Code to your receipt page. In Step 3, you¡¯ll be adding some ecommerce tracking code to the basic tracking code.
+Here¡¯s an example of what the ecommerce tracking code on your receipt page might look like. Remember, you¡¯ll be sandwiching this code into the basic Google Analytics Tracking Code.
+
+In the first part of the code, there is a call to the _addTrans() method. The call to _addTrans() tells Google Analytics that a transaction has occurred.
+
+The arguments to _addTrans() provide details about the transaction -- for example an Order ID, the total order amount, and the amount of tax charged.
+
+After the call to _addTrans(), there must be at least one call to the _addItem() method. This call provides Google Analytics with details about the specific item purchased.
+
+Finally, there is a call to the trackTrans() method which sends all the data to Google Analytics.
+
+Let¡¯s look at each method in more detail.
+
+The _addTrans() method establishes a transaction and takes the arguments shown here.
+
+Your code will need to dynamically retrieve the values from your merchant software to populate these fields.
+
+You can type single-quote single-quote to leave an optional field blank, but note that Order ID and Total are required.
+For each item that a visitor purchases, call _addItem(). If more than one item is purchased, you¡¯ll call _addItem() multiple times.
+
+As with _addTrans(), you can leave some of the fields blank, but note that Order ID, SKU or Code, Price and Quantity are required arguments.
+
+Use the same Order ID that you used in the call to addTrans().
+
+If you¡¯re not sure how to write this code, contact your merchant software provider.
+Finally, after the calls to _addTrans() and _addItem(), you¡¯ll need to call _trackTrans() to send the transaction information to Google Analytics. 
+
+Remember that all of the e-commerce code must appear after the Google Analytics Tracking Code calls _trackPageview().
+Generally, you¡¯ll be placing ecommerce tracking code on a secure shopping cart page.
+
+The standard Google Analytics Tracking Code automatically detects when an https protocol is being used. 
+
+So you won¡¯t need to add any special tracking code for secure pages.  
+For many e-commerce websites, the checkout process occurs on a separate domain or subdomain.
+
+For example, if you send customers from www.mystore.com to cart.mystore.com, you¡¯re sending them to a subdomain.
+
+If either of these scenarios applies to your site, you¡¯ll need to add some code to some of your pages so that you can track activity across domains and subdomains.
+
+The specific methods you¡¯ll use are listed on the slide and you can learn how to use them in the module on tracking domains and subdomains.

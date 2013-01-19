@@ -1,0 +1,74 @@
+Two reports in the Content section focus on page traffic, but each report organizes it differently. 
+
+The Pages report lists each page that received traffic.
+
+The Page Title viewing option on the Pages report groups your pages according to Title tag. You can click on a title to see the pages that share that title.
+
+The Content Drilldown report groups pages according to directory. You can click on a directory to see the pages in the directory.
+
+The Landing Pages report lists all of the pages through which people entered your site. 
+
+You can use this report to monitor the number of bounces and the bounce rate for each landing page. 
+
+Bounce rate is good indicator of landing page relevance and effectiveness. 
+
+You can lower bounce rates by tailoring each landing page to its associated ads and referral links. 
+
+The more relevant the page, the less likely a visitor will be to bounce.
+
+
+
+ The Navigation Summary can help you understand how people move through your site.
+It shows how people arrived at a specific page and where they went afterwards.  
+
+The report is available from the Pages report. 
+Here¡¯s the Navigation Summary report.
+
+Percent Entrances shows how frequently the page was a landing page. 
+
+Percent Previous Pages shows how frequently visitors came to the page after viewing another page on the site. 
+
+Percent Exits shows how frequently visits ended on this page. 
+
+Percent Next Pages shows how frequently visitors continued on to another page on the site. 
+
+The list of pages that were viewed immediately before the page or pages is shown in the left column, under Previous Page Path.
+
+The list of pages that were viewed immediately after the page or pages is shown in the right column, under Destination Page.
+
+
+The Entrance Paths report is a powerful tool for analyzing navigation paths. 
+
+For example, let¡¯s say that you want to find out whether people clicked the Purchase button on your landing page and actually completed the purchase.
+
+To find out, go to the Landing Pages report and click Entrance Paths.
+
+Here¡¯s the Navigation Summary report.
+
+Percent Entrances shows how frequently the page was a landing page. 
+
+Percent Previous Pages shows how frequently visitors came to the page after viewing another page on the site. 
+
+Percent Exits shows how frequently visits ended on this page. 
+
+Percent Next Pages shows how frequently visitors continued on to another page on the site. 
+
+The list of pages that were viewed immediately before the page or pages is shown in the left column, under Previous Page Path.
+
+The list of pages that were viewed immediately after the page or pages is shown in the right column, under Destination Page.
+
+
+The Entrance Paths report is a powerful tool for analyzing navigation paths. 
+
+For example, let¡¯s say that you want to find out whether people clicked the Purchase button on your landing page and actually completed the purchase.
+
+To find out, go to the Landing Pages report and click Entrance Paths.
+
+Select the landing page you want to analyze.
+
+
+In the left column, you¡¯ll see all the possible clicks people made on the page. Choose the link that represents the Purchase page.
+
+In the right hand column, you¡¯ll now see all the pages visitors went to after the Purchase page. By looking at this list, you¡¯ll be able to see how many visits ended up on the Purchase Completion page.  
+
+This report can show you if the landing page is doing the job you designed it for.

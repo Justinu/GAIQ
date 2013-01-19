@@ -1,0 +1,88 @@
+Use the Calendar to set your active date range ¨C the time period for which you want to look at data. 
+Select date ranges by clicking on the day and month within the calendar or you can type dates in the ¡°Date Range¡± boxes.
+Once you set a date range, it stays active until you change it, or log out.
+You can use a comparison date range to see how your site is performing month over month, year over year or even from one day to another.
+The date range and comparison date ranges you select will apply to all your reports and graphs. 
+Most reports include an over-time graph at the top. You can make this graph display data by day, week, or month.
+You can attach short notes or annotations to specific dates. Annotations are especially useful when you¡¯re looking at historical data and wondering whether certain campaigns or outside events had some effect on your traffic.
+
+To add an annotation, just click the date on the graph and select ¡°Create new annotation¡±.
+You can allow anyone with access to the profile to see the annotation, or make it private so that only you see it.   
+Most reports include an over-time graph at the top. You can make this graph display data by day, week, or month.
+You can attach short notes or annotations to specific dates. Annotations are especially useful when you¡¯re looking at historical data and wondering whether certain campaigns or outside events had some effect on your traffic.
+
+To add an annotation, just click the date on the graph and select ¡°Create new annotation¡±.
+You can allow anyone with access to the profile to see the annotation, or make it private so that only you see it.   
+A metric is a measurement. Examples of metrics are ¡°number of visits¡±, ¡°pages viewed per visit¡±, and ¡°average time on site¡±. 
+Metrics appear in scorecards and as columns in tables. 
+Metrics can also be graphed.
+You can graph any metric in a scorecard, simply by clicking it. Here, we¡¯ve graphed Average Time on Site.
+You can compare two metrics on the same graph to see how they are correlated.
+Click Compare Metric and select from the drop down.
+
+In this example, we¡¯re adding Average Time on Site to the graph.
+Groups of metrics are organized into tabs.
+The Site Usage tab shows metrics such as the number of pages viewed per visit, the average time on site, and the bounce rate.
+Goal Set tabs shows the conversion rates for each of your goals.
+If you¡¯ve enabled ecommerce, you¡¯ll also see an Ecommerce tab. 
+
+The AdWords reports have an additional tab called Clicks. This tab contains AdWords related metrics such as clicks, cost, revenue per click and ROI.
+
+The AdSense tab contains AdSense metrics such as revenue from AdSense and AdSense ads clicked.
+Many reports contain tables. These tables usually break out your data by a single dimension.
+Each row in the table shows the data for a different value of the dimension.
+In this example, the dimension being shown is City. Each row contains the data for a different city.
+Each row in this table corresponds to a kind of browser ¨C Internet Explorer, Firefox, Chrome and so on.
+So, this table is showing data for different values of the dimension ¡°Browser¡±.
+
+The Viewing option above the table lets us change the dimension. If we click Operating System as the Viewing Option, the table shows data for each kind of operating system.
+We can also add a secondary dimension. This lets us see data for each combination of two dimensions. 
+In this example, the table shows data for each operating system. 
+Let¡¯s look at what happens if we select Browser as a secondary dimension. 
+Now we can see data for each Operating System and Browser combination. 
+So, we can see data for Windows and Firefox, Windows and Chrome, Macintosh and Safari, Macintosh and Chrome, and so on.
+
+ 
+To filter the data that appears in a table, click the Search option above the table. 
+In this example, we¡¯re excluding visits from London and New York and also excluding any visits in which there were fewer than 2 pages viewed.
+
+ 
+The View option lets you visualize data in different ways.  
+The Data view organizes your report data into a table. This is the default view for many reports. 
+The Percentage view creates a pie-chart based on any one of the metrics in the report.
+The Performance view shows a bar-graph based on any metric you select.
+The Comparison view allows you to quickly see whether each entry in the table is performing above or below average.
+Term Cloud helps you visualize your keywords.
+Pivot creates a pivot table in which both rows and columns can break out dimension values. 
+In this example, we can see how many visits were referred by each combination of keyword and search engine. 
+Keywords are shown as rows and search engines are shown as columns.
+
+You can select the metrics you want to display in the table and the dimensions.
+Columns within tables can be sorted in both ascending and descending order simply by clicking on the column heading. 
+The arrows next to the heading title indicate the order in which the results are listed. 
+A down arrow indicates descending order and an upward arrow indicates ascending order.
+By default, all reports with tables display ten rows. 
+To display more than ten rows, go to the bottom of your report and click the dropdown menu arrow next to ¡°Show rows¡±. 
+You can display up to 500 rows per page.
+An advanced segment is a subset of your data. 
+
+For example, by selecting Visits with Transactions, you can limit your analysis to just the visits during which a person bought something.
+If you apply a single advanced segment, all your reports are limited to the data in that segment until you select a different segment.
+You can always go back to seeing all your data by selecting the All Traffic segment.
+
+By default, all reports with tables display ten rows. 
+To display more than ten rows, go to the bottom of your report and click the dropdown menu arrow next to ¡°Show rows¡±. 
+You can display up to 500 rows per page.
+An advanced segment is a subset of your data. 
+
+For example, by selecting Visits with Transactions, you can limit your analysis to just the visits during which a person bought something.
+If you apply a single advanced segment, all your reports are limited to the data in that segment until you select a different segment.
+You can always go back to seeing all your data by selecting the All Traffic segment.
+
+
+You can select up to four segments at a time. This allows you to compare data for each segment side by side as you go through your reports.
+In this case, we¡¯ve selected three segments: Visits with Transactions, Search Traffic, and Paid Search Traffic. 
+
+The Advanced Segment pulldown shows two kinds of segments: Default Segments and Custom Segments.
+Default Segments are predefined and available to anyone using Google Analytics.
+Custom Segments are segments that you define. We¡¯ll learn how to create custom segments in later lesson.

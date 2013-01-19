@@ -1,0 +1,47 @@
+With Advanced Segments, you can quickly isolate and analyze subsets of your traffic.
+You can create an advanced segment that only includes visits that meet a specific set of criteria.
+
+So, for example you can create an advanced segment that only includes visits from a certain geographic region or visits during which more than $100 was spent.
+While it's possible to create filtered profiles that segment traffic data, there are some differences between filtered profiles and advanced segments. 
+Advanced segments can be applied to historical data, but a filtered profile will only filter traffic going forward. When you create an advanced segment, that segment is available across all of your accounts and profiles. But, a filtered profile is only useful for a specific web property. You can compare up to four advanced segments side by side in your reports.  In contrast, filtered profiles can only be viewed one at a time. It is much easier to create an advanced segment than it is to create a filtered profile.  
+If you want to permanently affect the data that a profile shows, you should use a filtered profile. So if you want a profile that only shows CPC data, you should set up a filtered profile to do this. 
+And if you want to restrict user access to only a subset of data, the best way to do this is to set up a filtered profile and restrict the users' access to only that profile. 
+While it's possible to create filtered profiles that segment traffic data, there are some differences between filtered profiles and advanced segments. 
+Advanced segments can be applied to historical data, but a filtered profile will only filter traffic going forward. When you create an advanced segment, that segment is available across all of your accounts and profiles. But, a filtered profile is only useful for a specific web property. You can compare up to four advanced segments side by side in your reports.  In contrast, filtered profiles can only be viewed one at a time. It is much easier to create an advanced segment than it is to create a filtered profile.  
+If you want to permanently affect the data that a profile shows, you should use a filtered profile. So if you want a profile that only shows CPC data, you should set up a filtered profile to do this. 
+And if you want to restrict user access to only a subset of data, the best way to do this is to set up a filtered profile and restrict the users' access to only that profile. 
+Once you¡¯ve applied one or more advanced segments, you can see the data for the segments throughout all of your reports. 
+You can also change your date range and see the segments applied to historical data. 
+The segments remain applied until you deselect them or you logoff.
+Let¡¯s create an advanced segment that only includes visits during which more than $100 was spent.
+Begin by clicking the Advanced Segments pulldown.
+
+Next, click Create a new advanced segment.
+
+
+Now you¡¯ll see a screen that looks like this.
+Using this screen, you can combine one or more logical statements to define a segment.
+
+
+To include only visits during more than $100 was spent, first look for the metric Revenue.
+It¡¯s usually easiest to type what you are looking for into the search box, but you can also browse the complete list of metrics and dimensions.
+
+Select the condition Greater than and specify 100.
+
+
+
+
+
+
+Click Preview Segment and you can see the percentage of total visits that are included in the segment.
+
+You can add as many conditions to the segment as you like. When you¡¯ve finished, click Save Segment.
+
+
+
+
+The segment will now appear in the Custom Segments area of the Advanced Segments pulldown.
+
+
+
+

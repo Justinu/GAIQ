@@ -1,0 +1,34 @@
+In Google Analytics, a visit¡ªor session¡ªis defined by 30 minutes of inactivity, or when a user quits the browser.
+
+You can change the 30 minute default by calling setSessionCookieTimeout as shown in the slide.
+
+Simply specify a new timeout value in milliseconds as the argument to _setSessionCookieTimeout().
+By default, a conversion can be attributed to a campaign that is up to 6 months old.
+
+But, if your business has a longer or shorter marketing campaign timeframe, you can change this value.
+Just call _setCampaignCookieTimeout() and specify your new campaign length in milliseconds.
+
+For example, let¡¯s say that you want to set a campaign length of 30 days.
+To figure out the number of milliseconds that is, type ¡°30 days in milliseconds¡± into Google Search.
+The search engine will give you the answer which you can plug into _setCampaignCookieTimeout(). 
+
+
+Google Analytics attributes conversions to the campaign that most recently referred the visitor. 
+For example, let¡¯s say that someone discovers your site by clicking one of your AdWords ads. 
+Then, they come back to your site by clicking a banner ad that you¡¯ve tagged with campaign variables. This time, they convert to one of your goals.
+By default, the banner ad will get the credit for the conversion, not the AdWords ad that originally referred them.
+To change this behavior, you can tag all of your campaign links with utm_nooverride=1. 
+If you do this consistently with all of your campaigns, Google Analytics will attribute conversions to the first referring campaign, instead of the most recent one.
+Note that the utm_nooverride setting can be used in conjunction with autotagging.
+Google Analytics automatically tracks referrals from over 30 search engines. 
+But, if you want to add a search engine, you can do it by calling _addOrganic() in your Google Analytics Tracking Code.
+First, perform a search in the search engine and look at the URL of the search results page. 
+In the URL, look for the keyword you searched -- it should be preceded by a letter and an equal sign. This letter is the query variable for the search engine.
+In the example, the query variable is ¡°p¡±.
+Add a call to _addOrganic in your Google Analytics Tracking Code. The first argument is the name of the search engine. The second argument is the query variable.
+You may wish to treat traffic that results from certain search keywords as Direct. 
+For example, if someone searches for the exact name of your site, you might want to treat that visit as a Direct visit instead of a search.
+To do this, simply add a call to _addIgnoredOrganic() in your Google Analytics Tracking Code. Specify the keyword as the argument.
+You can also treat referrals from certain sites as Direct traffic instead of as referrals.
+For each site that you want to exclude as a referral and treat as Direct, add a call to _addIgnoredRef() in your Google Analytics Tracking Code.
+Specify the name of the site as the argument.

@@ -1,0 +1,92 @@
+So far in this course, we¡¯ve focused on tracking within a single domain. Before we learn how to track across multiple domains, let¡¯s understand why we might want to do this.
+
+A domain is a hostname that represents a numeric IP address on the internet. It allows us to easily identify a website by a name instead of having to use a long string of numbers. 
+
+For example, Google.com and YouTube.com are both domains owned by Google.
+You may sometimes need to track activity across multiple domains. 
+
+A common example of this is when you send visitors from your site to a separate shopping cart site to complete their purchases
+
+However, since Google Analytics uses exclusively first party cookies, it can¡¯t automatically track whether those visitors actually complete a purchase or not, because the purchase is taking place on another site. 
+
+Phrased more generally, if a session spans multiple domains, it would not be possible to track the session as a single visit attributed to one visitor. So, you¡¯ll need a way of sharing the cookie information between the two domains. 
+By calling the _link() method, you can send this cookie information across domains. 
+
+This allows Google Analytics to track a user across multiple domains by sending cookies via URL parameters.
+
+To track across domains, you¡¯ll need to follow two steps.
+
+First,  add a few lines to the Google Analytics Tracking Code on all pages of each site. The lines you need to add are shown here, in blue. 
+
+Call _setDomainName() with an argument of ¡°none¡±. 
+
+And call _setAllowLinker() with an argument of ¡°true¡±. 
+The second step involves the _link() method. Use this method in all links between domains. 
+
+In this example, we¡¯re updating all links from Google.com to YouTube.com and vice versa. We update each link to  call the _link() method as shown here.
+
+Now, when a user clicks on a link that takes them to the other domain, the session information is preserved and the user is identified as being the same visitor across both domains. 
+If you use a form to transfer your visitors from one domain to another, you will need to use the _linkByPost() method instead of the  _link() method. 
+
+This situation occurs most often with third party shopping carts. 
+
+To use forms to transfer from one domain to another, you must modify all the appropriate forms with the code shown here. 
+
+The _linkByPost() method will change the form action by adding query-string parameters to the value in the action attribute when the visitor submits the form.
+
+You may also sometimes need to track across multiple subdomains. A subdomain is part of a larger domain and frequently each subdomain contains the pages for a specific department or offering. 
+
+For example, Google.com has several subdomains such as news.google.com, sites.google.com, and maps.google.com.
+
+Since Google Analytics uses first-party cookies, cookies set on a subdomain can not automatically be read on the main domain, and vice versa. 
+
+As with multiple domains, you need to explicitly share the cookie information between subdomains or you¡¯ll lose session information. If you don¡¯t share cookie information between your subdomains, it may appear as though your own site is a referrer since only one domain is recognized as the main domain. 
+
+
+
+
+To track across multiple subdomains, call _setDomainName() and specify your parent domain name as the argument. This will allow the Google Analytics Tracking Code to use the same cookies across the subdomains. 
+
+For example, to track across Google¡¯s various subdomains, you would call _setDomainName() with an argument of ¡°dot google dot com¡± .
+
+A side effect of using this method is that your reports may not differentiate between visits to identically named pages within the various subdomains. 
+
+So, for example,  visits to maps.google.com/home.html and mail.google.com/home.html would be interpreted as visits to a single page. To correct this, you¡¯ll need to set up an advanced filter. We¡¯ll explain this in a minute.
+There are a few best practices for setting up your Analytics account to track across multiple subdomains. 
+
+First, create separate profiles for each subdomain. This way, you¡¯ll be able to see reports for each subdomain.
+
+Set up duplicate profiles - one master profile, plus one profile for each subdomain. In this example, we¡¯re looking at two subdomains.
+Your master profile has no filters, and each of the other two has an Include filter.
+Profile 1 includes all traffic to both subdomains. 
+Profile 2 includes only traffic to subdomain A. 
+Profile 3 includes only traffic to subdomain B.
+Second, if you track across several subdomains within one profile, your reports may not differentiate between visits to identically named pages within the various subdomains. 
+
+This is because the reports only show the Request URI -- which, in this example, is /home.html. 
+
+The hostname -- maps.google.com -- is stored in the Hostname data field in Google Analytics.
+
+So, once you¡¯ve called _setDomainName() to set your primary domain name, visits to maps.google.com/home.html and mail.google.com/home.html would be interpreted as the same page--¡±/home.html¡±. 
+
+To correct this, you can set up an advanced filter to include the subdomain in your reports. Set up your filter as shown in the slide.
+
+Note that the constructor must match exactly what is shown in the slide, starting with the forward slash.
+
+The filter works by appending the Hostname to the Request URI. As a result, you¡¯ll be able to distinguish between identically named pages on your subdomains. 
+If you want to track across both multiple domains and subdomains, you¡¯ll need to ensure that the Analytics cookies are set across the subdomains and that the cookies are being passed between the parent domains. 
+
+There are two steps. 
+For the first step, add the lines of code shown in blue to Google Analytics Tracking Code on every page of of one of Domain 1 and each of its subdomains.  
+Make sure that _setAllowLinker() has an argument of true and _setAllowHash() has an argument of false.
+
+Then, to each page of Domain 2 and each of its subdomains,  add the same code -- but with a different argument to _setDomainName(). 
+For step 2, call _link() or _linkByPost() in all links and forms that cross between the two parent domains. 
+
+For example, the code shown in the slide shows how you¡¯d do this to track across Google.com and YouTube.com.
+
+Note that you don¡¯t need to use _link() or _linkByPost() in links between subdomains within the same domain.
+
+Again, you should create separate profiles in your account for each primary domain and/or each subdomain. 
+
+You can easily do this by using an Include filter based on the hostname field.

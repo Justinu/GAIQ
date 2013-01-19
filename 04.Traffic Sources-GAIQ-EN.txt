@@ -1,0 +1,87 @@
+The reports in the Traffic Sources section show you where your traffic is coming from on the internet. 
+
+You can compare your traffic sources against each other to find out which sources send you the highest quality traffic.
+Direct Traffic represents visitors who clicked on a bookmark to arrive at your site, or who typed the URL directly into their browser.
+
+Referring Sites include any sites that send traffic to you. These could be banner ads or links featured on blogs, affiliates, or any site that links to your site. 
+
+Search Engine traffic represents visitors who click on a search results link in Google, Yahoo, or any other search engine. 
+
+Search Engine traffic can be organic -- in other words, free search results -- or paid. 
+
+Paid search engine traffic is pay per click or cost per click traffic that you purchase from a search engine -- for example on Google AdWords.
+
+Understanding which search engines send you qualified traffic can help you select the search engines on which you want to advertise.
+
+
+Looking at the highest traffic drivers is a start, but it doesn¡¯t tell you whether the traffic was qualified.
+
+In other words, did the traffic help you achieve the goals you¡¯ve set for your site? 
+
+One easy indicator of quality is Bounce Rate -- the percentage of visits in which the person left without viewing any other pages. 
+
+In the slide, although blogger.com sent the most traffic, it has an 88% bounce rate.  A bounce rate this high suggests that the site isn¡¯t relevant to what the visitor is looking for
+
+By clicking the ¡°compare to site average¡± icon and selecting a comparison metric,  you can see which sources outperform and underperform the site average. 
+
+So here, for example, if we select Bounce Rate as our comparison metric. we can see that the two most popular sources of traffic underperform the site average.
+
+One note about bounce rate, if your site is a blog, bounce rate may not be relevant. With blogs,  it¡¯s common for people to look at a single page and then leave.  
+
+
+
+
+
+The All Traffic report lists all of the sources sending traffic to your site -- including referrals, search engine traffic, and direct traffic
+
+This report is particularly helpful because you can identify your top performing sources, regardless of whether they are search engines or sites. 
+
+For example, in the report, we see that blogger.com referred more traffic than any other source. It has a medium of referral because it is a referral from a site.
+
+The second most popular source of traffic was direct. Direct traffic always has a medium of (none).
+
+Free Google search engine traffic was the fourth largest referrer. 
+
+The medium of organic tells us that this traffic came from clicks on unpaid search engine results. 
+
+The medium of cpc on this entry -- for cost per click -- tells us that this traffic came from paid search results.
+
+You may sometimes see _referrals_ from google.com. These can come from Google Groups posts or static pages on other Google sites.
+If you have goals or ecommerce set up on your site, you have a much wider range of metrics with which to assess performance. 
+
+Click on the Goal Set or Ecommerce tabs to view which sources are driving conversions and purchases.
+
+In this case, we¡¯re looking at metrics on the Ecommerce tab and comparing each traffic source¡¯s revenue with the site average. 
+
+
+To see the keywords that people used to find your site, go the Search Overview under Incoming Sources in the Traffic Sources section.
+Then, in the Search Overview report, click Keyword as the viewing option. 
+Looking at keywords is a very useful for understanding what visitors were expecting to find on your site. 
+
+Keywords with a high bounce rate tell you where you failed to meet that expectation.  
+
+For example, in the slide example, the ¡®google games¡¯ phrase has a 84% bounce rate. Let¡¯s find out what landing page is being used. 
+
+We start by clicking on the ¡®google games¡¯ entry in the table.
+This takes us to the Keyword report for ¡®google games¡¯. 
+
+To find out which landing page is being used for this keyword, we¡¯ll click Other as the Viewing Option above the table, and select Landing Page.
+We can now see which landing page is being used and evaluate it¡¯s relevance to the keyword. 
+
+This report can be particularly helpful if multiple landing pages are being used.
+
+You can find out which landing pages are responsible for the poor performance and send the keyword traffic to the most effective landing page. 
+
+Be sure to also check the bounce rates for organic, non-paid keywords. This information can offer insights into how to best focus your search engine optimization efforts. 
+By default, Google Analytics attributes a conversion or sale to the campaign that most recently preceded the conversion or sale.
+
+For example, if a visitor clicks on an AdWords ad (Campaign 1 in the first session) and then later returns via a referral to purchase something (Referrer 1 in the second session), the referral will get credit for the sale.
+
+However, if instead the visitor returns directly, then the AdWords ad (Campaign 1) will still get credit for the sale. 
+
+To prevent a specific referral or campaign from overriding a prior campaign, simply append ¡°utm_nooverride=1¡± to all referring campaign links as shown in the slide. This ensures that the conversion is always attributed to the original referrer (or first campaign the user clicked on). 
+
+Therefore, in the example above, the original campaign will continue to get credit for the conversion.
+
+If a visitor returns via a link without the utm_nooverride, as in the third example, that campaign will get credit for the sale since it overwrites all previous referring campaigns.
+

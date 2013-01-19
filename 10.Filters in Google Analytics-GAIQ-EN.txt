@@ -1,0 +1,124 @@
+Google Analytics filters provide you with an extremely flexible way of defining what data is included in your reports and how it appears.  
+
+You can use them to customize your reports so that data that you deem useful is highlighted in interesting ways. Filters can also help you clean up your data so that it is easier to read. 
+
+There are two types of filters in Google Analytics ¨C predefined filters and custom filters.
+Filters process your raw traffic data based on the filter specifications. The filtered data is then sent to the respective profile.  
+
+Once data has been passed through a filter, Google cannot re-process the raw data. 
+
+That¡¯s why we always recommend that you maintain one unfiltered profile so that you always have access to all of your data.
+To set up a goal, first go the Account Administration page.  Click your desired account.
+
+You can use the Filters tab to create new filters, edit their settings, and apply them to profiles.
+
+
+To create a new filter you will need to complete several fields, including the filter name and type. 
+
+If you elect to create a custom filter, you will need to complete several additional fields.
+Google Analytics provides three commonly used predefined filters. 
+
+The first filter called ¡°Exclude traffic from domains¡± excludes traffic from the domain that you specify in the Domainfield. If you apply this filter, Google Analytics will apply a reverse lookup with each visitor¡¯s IP address to determine if the visitor is coming in from a domain that should be filtered out. Domains usually represent the ISP of your visitor although larger companies generally have their IP addresses mapped to their domain name. 
+
+The second filter, ¡°Exclude traffic from IP addresses¡±, removes traffic from addresses entered into the IP address field. This filter is generally used to exclude your internal company traffic.
+
+The third filter, ¡°Include traffic subdirectories¡±, causes your profile to only report traffic to a specified directory on your site. This is typically used on a profile that is created to track one part of a website. 
+As a best practice, we recommend that you create a filter to exclude your internal company traffic from your reports. 
+
+To do this you can use the predefined filter ¡°Exclude traffic from IP addresses¡±.  You will need to enter your IP address or range of addresses into the ¡®IP address¡± field.
+In addition to the pre-defined filters that Analytics offers, you can also create custom filters. 
+
+Custom filters offer you greater control over what data appears in your profiles. 
+
+To create a custom filter, select ¡°Custom filter¡±. Additional fields will appear when you choose this option.
+Each custom filter has three main parts.
+
+The first part of a custom filter is ¡°Filter Types¡±. There are six filter types available and each one serves a specific purpose. We¡¯ll look at these in a minute.
+
+The second part is the ¡°Filter Field¡±. There are numerous fields you can use to create your filter. Examples of some commonly used fields are the ¡°Request URI¡± and ¡°Visitor Country¡± fields. 
+
+The complete list of fields can be found through the link shown here or you can search for  ¡°filter fields¡±  in the Analytics Help Center.
+
+The third part of a custom filter is the ¡°Filter Pattern¡±.  This is the text string that is used to attempt to match pageview data. The pattern that you provide is applied to the field and, if it matches any part of the field,  it returns a positive result and causes an action to occur. You¡¯ll need to use POSIX Regular Expressions to create the filter pattern. Learn more in the module on Regular Expressions.
+
+Here¡¯s a chart that describes the filter types. 
+
+Exclude and Include filters are the most common types. They allow you to segment your data in many different ways. They¡¯re frequently used to filter out or filter in traffic from a particular state or country.
+
+Lowercase and Uppercase filters do not require a filter pattern, only a filter field. Lowercase and Uppercase filters are very useful for consolidating line items in a report. Let¡¯s say, for example, that you see multiple entries in your reports for a keyword or a URL, and the only difference between the multiple entries is that sometimes the URL or keyword appears with a different combination of uppercase and lowercase letters. You can use the Lowercase and Uppercase filters to consolidate these multiple entries into a single entry.
+
+Search and Replace filters replace one piece of data with another. They are often used to replace long URL strings with a shorter string that is easier to read and identify in your reports.
+
+You can use Advanced filters to remove unnecessary data, replace one field with another, or combine elements from multiple filter fields. For example, a best practice when tracking multiple subdomains in a single profile is to append the subdomain name to the page names. You can do this by creating an advanced filter that appends Hostname to Request URI.
+
+Let's look at an example of a Search and Replace filter.
+
+Here¡¯s an example of how you might use a Search and Replace filter.
+
+Let¡¯s say that your website uses category IDs as an organizational structure. So, in your Pages report, you¡¯d see a list of Request URIs that indicate the different pages on your site.
+
+The page ¡°/category.asp?catid=5¡± is actually the Google Store Wearables page. You could make the Pages report more meaningful by replacing ¡°catid=5¡± with a descriptive word, like ¡°Wearables¡±.
+Here¡¯s what the Search and Replace filter might look like. This particular filter would overwrite the entire Request URI with ¡°Wearables.¡±
+
+This is a simplified example to give you an idea of how you can use filters.
+
+Using Filters and Profiles
+Once you¡¯ve defined a filter, you can apply it to a single profile or across several profiles.
+
+So, for example, in the slide, the graphic shows a single web property with two profiles. 
+Filter 1 has been applied to both profiles.
+Filter 2 has been applied only to Profile 2.
+
+By setting up multiple profiles and applying filters creatively to each of them, you have a great deal of reporting and analysis flexibility.
+You can also use profiles and filters together to create customized data views.  
+Let¡¯s say that you want to have two different views of your data -- one view includes only traffic to a subdomain and the other view only includes customers from a specific geographic region. 
+To do this, you¡¯d set up Profile 2 and Profile 3 as shown here in the chart.  
+
+Or, for example, you might want to set up a profile that only inlcudes Google AdWords traffic. We¡¯ll look at how to do this in the next slide.  Remember, you always want to maintain a profile that contains all of your data. That¡¯s Profile 1 in the chart. 
+To set up a profile that includes only Google AdWords traffic, you need to apply the two Custom Include filters shown in the slide.
+
+In filter one, you¡¯ll filter on campaign source for a pattern of google.
+
+In filter two, you¡¯ll filter on campaign medium for a pattern of cpc. 
+
+You can apply these two filters in any order.
+
+Let¡¯s look at how you can use profiles and filters to track subdomains.
+
+If your subdomains are totally separate businesses, and you have no need for reports that include cumulative traffic to both, then you could simply create a unique web property for each subdomain.
+Google Analytics creates a unique web property ID for each web property you set up. 
+The web property ID comprises the letters ¡°U¡± ¡°A¡±, followed by the account ID, followed by another number that distinguishes the web property from other web properties in the account.
+In the slide example,  web property 1 is distinguished by a dash 1. Web property 2 is distinguished by a dash 2.
+
+So, you¡¯d install the ¡°dash 1¡± version of your tracking code on your Subdomain A pages, and the ¡°dash 2¡± version of your tracking code on your Subdomain B pages.
+
+But what if you want to analyze the traffic aggregated across both subdomains? In this case, you could set up 3 duplicate profiles under a single web property. 
+Then, you¡¯d apply an Include filter to two of the profiles.
+Profile 1 includes all traffic to both subdomains.  
+Profile 2 only includes traffic to subdomain A. 
+Profile 3 only includes traffic to subdomain B.
+
+In this scenario, you¡¯d install identical tracking code on every page of the site regardless of subdomain.
+When setting up profiles and filters for your Analytics account, you should always create one unfiltered profile that can be a back-up in case your filters do not function as planned or you need more data than you originally thought. 
+
+Remember, once your raw data has passed through filters, Google cannot go back and reprocess the data. So, maintaining an unfiltered profile provides you with a backup.
+You can apply multiple include and exclude filters to a single profile, but keep in mind that when more than one filter is applied, the filters will be executed in the same order that they are listed in your Profile Settings. 
+
+In other words, the output from one filter is then used as the input for the next filter.
+
+The example shown here illustrates that if you want to include only users from California and Texas, you cannot create two separate include filters because they will cancel each other out. The solution is to create one filter that uses a regular expression to indicate that the Visitor Region should be California or Texas.
+Filtering AdWords Data
+If you drive traffic from AdWords to multiple sites, each of which is tracked in a separate Analytics profile, you¡¯ll need to apply a filter to each site¡¯s profile. 
+Because, when you apply cost data from an AdWords account, data from the entire account is applied to each profile - ?Google Analytics doesn¡¯t automatically match campaigns to specific profiles. 
+To illustrate what would happen if you don¡¯t apply a filter, let¡¯s imagine that you have two sites and you spend $50 to drive traffic to each of them. 
+
+Without a filter, the Clicks tab on each profile would include $100 worth of cost data instead of just the $50 you spent for that site.
+
+So, for each profile that should include a subset of your AdWords data, you¡¯ll need to create a custom include filter. 
+Create a custom filter and select the Include filter type.  
+
+For the filter field, select ¡°Campaign Target URL¡±.  This field only applies to Google AdWords data.  
+
+Use a regular expression to create the filter pattern based on the AdWords destination URL that is applicable to this profile.  
+
+Once you¡¯ve saved this filter, only AdWords data for this profile will be displayed in the reports.
