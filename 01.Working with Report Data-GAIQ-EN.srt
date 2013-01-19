@@ -1,285 +1,244 @@
 1
-00:00:04,993 --> 00:00:04,993
-Use the Calendar to set your active date range – the time period for which you want to look at data.
-使用日历设置有效日期范围-你想要查看的时间范围
+00:00:04,674 --> 00:00:10,156
+使用日历设置有效的时间范围-你想要查看的时间范围
 
 2
-00:00:15,414 --> 00:00:15,414
-Select date ranges by clicking on the day and month within the calendar or you can type dates in the “Date Range” boxes.
+00:00:10,583 --> 00:00:18,172
+在日历中点击月日来选择日期范围 或者可以在“日期范围”中输入日期
 
 3
-00:00:15,414 --> 00:00:15,414
-Once you set a date range, it stays active until you change it, or log out.
+00:00:18,595 --> 00:00:22,952
+设置的日期范围会一直生效至再次修改或退出
 
 4
-00:00:15,414 --> 00:00:15,414
-You can use a comparison date range to see how your site is performing month over month, year over year or even from one day to another.
+00:00:24,219 --> 00:00:32,298
+通过选择日期比较 你可以比较网站月 年甚至天的表现
 
 5
-00:00:15,414 --> 00:00:15,414
-The date range and comparison date ranges you select will apply to all your reports and graphs.
+00:00:32,956 --> 00:00:38,173
+日期范围和你所选择的比较日期范围将应用到所有的报告和图表
 
 6
-00:00:15,414 --> 00:00:15,414
-Most reports include an over-time graph at the top. You can make this graph display data by day, week, or month.
+00:00:38,787 --> 00:00:46,469
+大多数报告顶部有一个时间折线图 你可以选择按天 周或月显示数据
 
 7
-00:00:15,414 --> 00:00:15,414
-You can attach short notes or annotations to specific dates. Annotations are especially useful when you’re looking at historical data and wondering whether certain campaigns or outside events had some effect on your traffic.
+00:00:47,034 --> 00:00:59,796
+你可以为特定日期添加小说明或注释 注释非常有用 尤其是当你查看历史数据 并且不知道特定广告活动或外部事件对流量是否有一些影响时
 
 8
-00:00:15,414 --> 00:00:15,414
-To add an annotation, just click the date on the graph and select “Create new annotation”.
+00:01:00,078 --> 00:01:04,785
+要添加一个注释 只需要点击图上的日期 并且选择“创建新注释”
 
 9
-00:00:15,414 --> 00:00:15,414
-You can allow anyone with access to the profile to see the annotation, or make it private so that only you see it.
+00:01:04,975 --> 00:01:12,235
+你可以允许所有拥有配置文件访问权限的人看到注释 或者将注释设置隐私只有自己能看到
 
 10
-00:00:15,414 --> 00:00:15,414
-Most reports include an over-time graph at the top. You can make this graph display data by day, week, or month.
+00:01:12,761 --> 00:01:20,495
+指标是一个度量 “访问次数” “每次访问的网页浏览量”和“平均访问持续时间”都是指标的例子
 
 11
-00:00:15,414 --> 00:00:15,414
-You can attach short notes or annotations to specific dates. Annotations are especially useful when you’re looking at historical data and wondering whether certain campaigns or outside events had some effect on your traffic.
+00:01:20,780 --> 00:01:24,640
+指标出现在积分卡中 也是表格中列
 
 12
-00:00:15,414 --> 00:00:15,414
-To add an annotation, just click the date on the graph and select “Create new annotation”.
+00:01:25,203 --> 00:01:26,837
+指标也会被画成图
 
 13
-00:00:15,414 --> 00:00:15,414
-You can allow anyone with access to the profile to see the annotation, or make it private so that only you see it.
+00:01:27,118 --> 00:01:34,108
+你可以将积分卡中的任意指标转化为图 只需要点击这个指标 这里我们将平均访问持续时间转化为图
 
 14
-00:00:15,414 --> 00:00:15,414
-A metric is a measurement. Examples of metrics are “number of visits”, “pages viewed per visit”, and “average time on site”.
+00:01:35,089 --> 00:01:38,558
+You can compare two metrics on the same graph to see how they are correlated.
+你可以在一张图上比较两个指标 以便查看二者的关系
 
 15
-00:00:15,414 --> 00:00:15,414
-Metrics appear in scorecards and as columns in tables.
-
-16
-00:00:15,414 --> 00:00:15,414
-Metrics can also be graphed.
-
-17
-00:00:15,414 --> 00:00:15,414
-You can graph any metric in a scorecard, simply by clicking it. Here, we’ve graphed Average Time on Site.
-
-18
-00:00:15,414 --> 00:00:15,414
-You can compare two metrics on the same graph to see how they are correlated.
-
-19
-00:00:15,414 --> 00:00:15,414
+00:01:38,884 --> 00:01:42,214
 Click Compare Metric and select from the drop down.
 
-20
-00:00:15,414 --> 00:00:15,414
+16
+00:01:42,778 --> 00:01:46,388
 In this example, we’re adding Average Time on Site to the graph.
 
-21
-00:00:15,414 --> 00:00:15,414
+17
+00:01:47,368 --> 00:01:49,671
 Groups of metrics are organized into tabs.
 
-22
-00:00:15,414 --> 00:00:15,414
+18
+00:01:50,186 --> 00:01:57,077
 The Site Usage tab shows metrics such as the number of pages viewed per visit, the average time on site, and the bounce rate.
 
-23
-00:00:15,414 --> 00:00:15,414
+19
+00:01:57,356 --> 00:02:01,716
 Goal Set tabs shows the conversion rates for each of your goals.
 
-24
-00:00:15,414 --> 00:00:15,414
+20
+00:02:02,437 --> 00:02:05,948
 If you’ve enabled ecommerce, you’ll also see an Ecommerce tab.
 
-25
-00:00:15,414 --> 00:00:15,414
+21
+00:02:06,277 --> 00:02:17,452
 The AdWords reports have an additional tab called Clicks. This tab contains AdWords related metrics such as clicks, cost, revenue per click and ROI.
 
-26
-00:00:15,414 --> 00:00:15,414
+22
+00:02:18,290 --> 00:02:24,058
 The AdSense tab contains AdSense metrics such as revenue from AdSense and AdSense ads clicked.
 
-27
-00:00:15,414 --> 00:00:15,414
+23
+00:02:25,511 --> 00:02:30,639
 Many reports contain tables. These tables usually break out your data by a single dimension.
 
-28
-00:00:15,414 --> 00:00:15,414
+24
+00:02:31,196 --> 00:02:34,994
 Each row in the table shows the data for a different value of the dimension.
 
-29
-00:00:15,414 --> 00:00:15,414
+25
+00:02:35,653 --> 00:02:42,265
 In this example, the dimension being shown is City. Each row contains the data for a different city.
 
-30
-00:00:15,414 --> 00:00:15,414
+26
+00:02:43,009 --> 00:02:49,857
 Each row in this table corresponds to a kind of browser – Internet Explorer, Firefox, Chrome and so on.
 
-31
-00:00:15,414 --> 00:00:15,414
+27
+00:02:50,183 --> 00:02:54,213
 So, this table is showing data for different values of the dimension “Browser”.
 
-32
-00:00:15,414 --> 00:00:15,414
+28
+00:02:55,298 --> 00:03:04,854
 The Viewing option above the table lets us change the dimension. If we click Operating System as the Viewing Option, the table shows data for each kind of operating system.
 
-33
-00:00:15,414 --> 00:00:15,414
+29
+00:03:05,232 --> 00:03:12,028
 We can also add a secondary dimension. This lets us see data for each combination of two dimensions.
 
-34
-00:00:15,414 --> 00:00:15,414
+30
+00:03:12,644 --> 00:03:16,153
 In this example, the table shows data for each operating system.
 
-35
-00:00:15,414 --> 00:00:15,414
+31
+00:03:16,859 --> 00:03:20,420
 Let’s look at what happens if we select Browser as a secondary dimension.
 
-36
-00:00:15,414 --> 00:00:15,414
+32
+00:03:21,641 --> 00:03:25,392
 Now we can see data for each Operating System and Browser combination.
 
-37
-00:00:15,414 --> 00:00:15,414
+33
+00:03:25,810 --> 00:03:33,962
 So, we can see data for Windows and Firefox, Windows and Chrome, Macintosh and Safari, Macintosh and Chrome, and so on.
 
-38
-00:00:15,414 --> 00:00:15,414
+34
+00:03:35,371 --> 00:03:39,965
 To filter the data that appears in a table, click the Search option above the table.
 
-39
-00:00:15,414 --> 00:00:15,414
+35
+00:03:40,339 --> 00:03:47,983
 In this example, we’re excluding visits from London and New York and also excluding any visits in which there were fewer than 2 pages viewed.
 
-40
-00:00:15,414 --> 00:00:15,414
+36
+00:03:48,965 --> 00:03:52,621
 The View option lets you visualize data in different ways.
 
-41
-00:00:15,414 --> 00:00:15,414
+37
+00:03:53,001 --> 00:03:58,924
 The Data view organizes your report data into a table. This is the default view for many reports.
 
-42
-00:00:15,414 --> 00:00:15,414
+38
+00:03:59,769 --> 00:04:04,876
 The Percentage view creates a pie-chart based on any one of the metrics in the report.
 
-43
-00:00:15,414 --> 00:00:15,414
+39
+00:04:05,199 --> 00:04:08,900
 The Performance view shows a bar-graph based on any metric you select.
 
-44
-00:00:15,414 --> 00:00:15,414
+40
+00:04:09,887 --> 00:04:16,775
 The Comparison view allows you to quickly see whether each entry in the table is performing above or below average.
 
-45
-00:00:15,414 --> 00:00:15,414
+41
+00:04:17,951 --> 00:04:19,682
 Term Cloud helps you visualize your keywords.
 
-46
-00:00:15,414 --> 00:00:15,414
+42
+00:04:20,717 --> 00:04:26,200
 Pivot creates a pivot table in which both rows and columns can break out dimension values.
 
-47
-00:00:15,414 --> 00:00:15,414
+43
+00:04:26,618 --> 00:04:32,262
 In this example, we can see how many visits were referred by each combination of keyword and search engine.
 
-48
-00:00:15,414 --> 00:00:15,414
+44
+00:04:32,731 --> 00:04:36,153
 Keywords are shown as rows and search engines are shown as columns.
 
-49
-00:00:15,414 --> 00:00:15,414
+45
+00:04:36,572 --> 00:04:40,180
 You can select the metrics you want to display in the table and the dimensions.
 
-50
-00:00:15,414 --> 00:00:15,414
+46
+00:04:41,588 --> 00:04:47,774
 Columns within tables can be sorted in both ascending and descending order simply by clicking on the column heading.
 
-51
-00:00:15,414 --> 00:00:15,414
+47
+00:04:48,106 --> 00:04:52,445
 The arrows next to the heading title indicate the order in which the results are listed.
 
-52
-00:00:15,414 --> 00:00:15,414
+48
+00:04:52,727 --> 00:04:58,210
 A down arrow indicates descending order and an upward arrow indicates ascending order.
 
-53
-00:00:15,414 --> 00:00:15,414
+49
+00:04:58,449 --> 00:05:01,916
 By default, all reports with tables display ten rows.
+
+50
+00:05:02,149 --> 00:05:09,186
+To display more than ten rows, go to the bottom of your report and click the dropdown menu arrow next to “Show rows”.
+
+51
+00:05:09,420 --> 00:05:12,086
+You can display up to 500 rows per page.
+
+52
+00:05:12,368 --> 00:05:15,835
+An advanced segment is a subset of your data.
+
+53
+00:05:16,117 --> 00:05:24,181
+For example, by selecting Visits with Transactions, you can limit your analysis to just the visits during which a person bought something.
 
 54
-00:00:15,414 --> 00:00:15,414
-To display more than ten rows, go to the bottom of your report and click the dropdown menu arrow next to “Show rows”.
+00:05:24,507 --> 00:05:32,103
+If you apply a single advanced segment, all your reports are limited to the data in that segment until you select a different segment.
 
 55
-00:00:15,414 --> 00:00:15,414
-You can display up to 500 rows per page.
+00:05:32,384 --> 00:05:37,136
+You can always go back to seeing all your data by selecting the All Traffic segment.
 
 56
-00:00:15,414 --> 00:00:15,414
-An advanced segment is a subset of your data.
-
-57
-00:00:15,414 --> 00:00:15,414
-For example, by selecting Visits with Transactions, you can limit your analysis to just the visits during which a person bought something.
-
-58
-00:00:15,414 --> 00:00:15,414
-If you apply a single advanced segment, all your reports are limited to the data in that segment until you select a different segment.
-
-59
-00:00:15,414 --> 00:00:15,414
-You can always go back to seeing all your data by selecting the All Traffic segment.
-
-60
-00:00:15,414 --> 00:00:15,414
-By default, all reports with tables display ten rows.
-
-61
-00:00:15,414 --> 00:00:15,414
-To display more than ten rows, go to the bottom of your report and click the dropdown menu arrow next to “Show rows”.
-
-62
-00:00:15,414 --> 00:00:15,414
-You can display up to 500 rows per page.
-
-63
-00:00:15,414 --> 00:00:15,414
-An advanced segment is a subset of your data.
-
-64
-00:00:15,414 --> 00:00:15,414
-For example, by selecting Visits with Transactions, you can limit your analysis to just the visits during which a person bought something.
-
-65
-00:00:15,414 --> 00:00:15,414
-If you apply a single advanced segment, all your reports are limited to the data in that segment until you select a different segment.
-
-66
-00:00:15,414 --> 00:00:15,414
-You can always go back to seeing all your data by selecting the All Traffic segment.
-
-67
-00:00:15,414 --> 00:00:15,414
+00:05:37,449 --> 00:05:43,918
 You can select up to four segments at a time. This allows you to compare data for each segment side by side as you go through your reports.
 
-68
-00:00:15,414 --> 00:00:15,414
+57
+00:05:46,262 --> 00:05:53,625
 In this case, we’ve selected three segments: Visits with Transactions, Search Traffic, and Paid Search Traffic.
 
-69
-00:00:15,414 --> 00:00:15,414
+58
+00:05:54,606 --> 00:06:00,514
 The Advanced Segment pulldown shows two kinds of segments: Default Segments and Custom Segments.
 
-70
-00:00:15,414 --> 00:00:15,414
+59
+00:06:00,796 --> 00:06:05,390
 Default Segments are predefined and available to anyone using Google Analytics.
 
-71
-00:00:15,414 --> 00:00:15,414
+60
+00:06:05,670 --> 00:06:12,063
 Custom Segments are segments that you define. We’ll learn how to create custom segments in later lesson.
+
+61
+00:06:12,063 --> 00:06:12,063
 
